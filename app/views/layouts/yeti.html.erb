@@ -25,6 +25,12 @@
             width: 70%;
             margin-top: 50px;
         }
+        .neworderbox{
+            margin: 0px auto;
+            width: 400px;
+            margin-top: 50px;
+        }
+
     </style>
 
     <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
@@ -44,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
+          <a class="navbar-brand" href="#">校园报修</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -60,17 +66,17 @@
                     <li><%= link_to('修改密码', edit_user_registration_path, :method => :get) %></li>
                 <% end %>
             <% else %>
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href='localhost:3000'>Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <% end %>
           </ul>
         <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
-                <li><a>hello!&nbsp;<%= current_user.username %></a></li>
-                <li><a>role:&nbsp;<%= current_user.role %></a></li>
+                <li><a>Hello!&nbsp;<%= current_user.username %></a></li>
+                <li><a>Role:&nbsp;<%= current_user.role %></a></li>
                 <% if current_user.org != nil%>
-                <li><a>org:<%= current_user.org %></a><li>
+                <li><a>Department:&nbsp;<%= current_user.org %></a><li>
                 <% end %>
                 <% if current_user.role == 'repairman' %>
                     <li><a>您的评分:<%= current_user.score %> / 5 </a></li>
