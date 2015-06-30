@@ -133,7 +133,7 @@ swal({   title: "确定要流转到"+sel.value+"吗?",
   <div class="bigbox">
   <% if @orders.size != 0 %>
   <div class="panel panel-default">
-    <div class="alert alert-info" role="alert" style="margin-bottom:2px" style="margin-bottom:2px;font-size:16px">新提交的报修单</div>
+    <div class="alert alert-info" role="alert" style="margin-bottom:2px;font-size:16px">新提交的报修单</div>
     <table class="table">
       <tr>
         <th>#</th>
@@ -177,7 +177,7 @@ swal({   title: "确定要流转到"+sel.value+"吗?",
   <% elsif current_user.role == 'root' %>
   <div class="bigbox">
   <div class="panel panel-default">
-    <div class="alert alert-info" role="alert" style="margin-bottom:2px" style="margin-bottom:2px;font-size:16px">管理员及维修员</div>
+    <div class="alert alert-info" role="alert" style="margin-bottom:2px;font-size:16px">管理员及维修员</div>
     <table class="table">
       <tr>
         <th>#</th>
@@ -210,7 +210,7 @@ swal({   title: "确定要流转到"+sel.value+"吗?",
     <div class="alert alert-info" role="alert">目前还没有要处理的报修单</div>
     <% else %>
     <div class="panel panel-default">
-        <div class="alert alert-info" role="alert" style="margin-bottom:2px">新分配的报修单</div>
+        <div class="alert alert-info" role="alert" style="margin-bottom:2px; font-size:16px">新分配的报修单</div>
     <table class="table">
       <tr>
         <th>#</th>
