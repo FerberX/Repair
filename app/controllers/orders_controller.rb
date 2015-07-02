@@ -78,7 +78,7 @@ class OrdersController < ApplicationController
         order_hash = params[:order]
         @order.suggestion = order_hash[:suggestion]
         @order.status = "已处理"
-        OrderMailer.repair_email(@order).deliver_now!
+#        OrderMailer.repair_email(@order).deliver_now!
         if @order.save
             redirect_to @order
         else

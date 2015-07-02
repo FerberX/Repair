@@ -1,6 +1,7 @@
 class OrderMailer < ApplicationMailer
-    default from: 'yinshucheng8@163.com'
-
+#	 default from: 'guo2014@mail.ustc.edu.cn'
+   default from: 'yinshucheng8@163.com'
+	
     def repair_email(order)
         @order = order
         @url = 'http://localhost:3000/orders/' + @order.id.to_s

@@ -86,7 +86,7 @@
 
     <% if @order.status != "已提交" %>
     <div class="panel panel-default">
-      <div class="alert alert-info" style="margin-bottom:2px" role="alert">维修情况:</div>
+      <div class="alert alert-info" style="margin-bottom:2px;font-size:16px" role="alert">维修情况:</div>
       <table class="table">
         <tr>
           <td width="20%">
@@ -117,7 +117,7 @@
     <% end %>
 
     <% if @order.status == "已评价" %>
-      <div class="alert alert-info" style="margin-bottom:2px" role="alert">总体评价:</div>
+      <div class="alert alert-info" style="margin-bottom:2px;font-size:16px" role="alert">总体评价:</div>
       <div class="form-group", >
           <div id="show_star" data-score="<%= @order.score %>"></div>
       </div>

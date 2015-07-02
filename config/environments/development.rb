@@ -42,6 +42,14 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
   config.action_mailer.smtp_settings = {
+
+#    :address => "smtp.ustc.edu.cn",
+#    :port => "25",
+#    :authentication => "login",
+#    :user_name => "guo2014@mail.ustc.edu.cn",
+#    :password => "donggua",
+#    :enable_starttls_auto => true
+
     :address => "smtp.163.com",
     :port => "25",
     :authentication => "login",
