@@ -13,4 +13,4 @@
 /log/*
 !/log/.keep
 /tmp
-/public/system/orders/avatars/*
+#/public/system/orders/avatars/*
